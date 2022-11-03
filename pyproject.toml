@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+authors = [{ name = "xupengzhuo", email = "xupengzhuo@gmail.com" }]
+name = "seclib"
+version = "0.0.1"
+description = "simple python secure lib"
+requires-python = ">=3.10"
+dependencies = ["cryptography"]
+license = { text = "MIT License" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+namespaces = false
